@@ -1,0 +1,120 @@
+main {
+  padding-top: 2rem;
+}
+
+.background {
+  position: fixed;
+  background: url("../imgs/plans-background.jpg") center/cover;
+  filter: grayscale(60%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.package {
+  position: relative;
+  width: 80%;
+  margin: 1rem 0;
+  border-left: none;
+  box-shadow: 2px 2px 4px 0 #ccc;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.package:hover,
+.package:active {
+  box-shadow: 2px -4px 6px 0 rgba(59, 60, 64, 0.5);
+}
+
+.package a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 2rem;
+}
+
+.package__title {
+  color: rgb(244, 199, 135);
+}
+
+.package__badge {
+  background-color: rgba(203, 78, 34, 1);
+  position: absolute;
+  top: 4px;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.package__subtitle {
+  color: #ccc;
+}
+
+.package__info {
+  padding: 2rem;
+  border: 1px solid #777;
+  font-size: 1.15rem;
+  color: #f28147;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+#free {
+  background-color: rgba(203, 78, 34, 1);
+  float: right;
+  border-radius: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: right;
+}
+
+#free:hover,
+#free:active {
+  box-shadow: -2px -4px 6px 0 rgba(59, 60, 64, 0.5);
+}
+
+#premium {
+  background-color: rgba(59, 60, 64, 1);
+}
+#premium .package__title {
+  color: #fff;
+}
+
+#plus {
+  background-color: rgba(103, 68, 58, 1);
+  margin-top: 2rem;
+}
+
+#plus .package__title {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+
+  .package__badge {
+    top: 20px;
+  }
+
+  #plus .package__title {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .package {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}

@@ -1,0 +1,46 @@
+html,
+body,
+.container {
+  height: 100%;
+}
+.container div:last-child:hover {
+  background-color: red;
+  color: white;
+}
+
+.box1 {
+  padding: 3px;
+  border: 2px solid black;
+  margin: 6px 3px;
+}
+
+.box2 {
+  padding: 3px 2px 4px 6px;
+  border: 2px solid black;
+  margin: 6px 3px 1px 8px;
+}
+
+.box3 {
+  background-color: aqua;
+  padding: 3px;
+  border: 2px solid black;
+  margin: 6px 3px;
+  height: 100%;
+}
+
+.box4 {
+  height: 300px;
+  width: 50%;
+}
+
+.box5 {
+  display: inline-block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.not-displayed {
+  display: none;
+}
