@@ -133,21 +133,26 @@
 @media (min-width: 40rem) and (orientation: landscape) {
   /* plans */
   .plan__list {
-    margin: auto;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan {
-    margin: 0.5rem;
-    display: inline-block;
     width: 30%;
     min-width: 13rem;
     max-width: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31rem;
   }
 
   .plan--highlighted {
     box-shadow: 1px 2px 4px 3px rgba(59, 60, 64, 0.5);
+    height: 32rem;
+    z-index: 50;
   }
 
   /* key features */
@@ -155,8 +160,11 @@
   .key-feature {
     width: 30%;
     min-width: 12rem;
-    display: inline-block;
-    vertical-align: top;
+  }
+
+  .key-features__list {
+    display: flex;
+    justify-content: center;
   }
 }
 

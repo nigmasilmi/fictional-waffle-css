@@ -13,7 +13,7 @@ body {
 }
 main {
   min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 3.8rem;
+  margin-top: 3.5rem;
 }
 
 /* main header */
@@ -36,11 +36,11 @@ main {
   font-weight: bold;
   font-size: 1.4rem;
   text-shadow: 0px 2px 2px #3b3c40;
-  display: inline-block;
-  vertical-align: middle;
 }
+
 .main-header__brand img {
   height: 2.5rem;
+  vertical-align: middle;
 }
 
 /* end of main header */
@@ -51,13 +51,15 @@ main {
 }
 
 .main-nav__items {
+  display: flex;
+  align-items: center;
+
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 2rem;
 }
 
@@ -116,12 +118,13 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__link {
-  display: block;
-  margin: 2rem auto;
+  margin: 0.5rem;
 }
 
 .main-footer__link a {
@@ -219,7 +222,9 @@ main {
   list-style: none;
   margin: 10% auto;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mobile-nav__item {
@@ -296,10 +301,7 @@ main {
 
   /* main nav */
   .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 44px);
-    vertical-align: middle;
+    display: flex;
   }
 
   /* brand */
@@ -308,8 +310,9 @@ main {
   }
 
   /* footer */
-  .main-footer__link {
-    display: inline-block;
-    margin: 3.2rem;
+  .main-footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }

@@ -67,6 +67,9 @@
   .testimonial {
     margin: 3rem auto;
     max-width: 1500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .testimonial__info {
@@ -77,14 +80,14 @@
   }
 
   .testimonial__image-container {
-    display: inline-block;
-    vertical-align: middle;
     width: 60%;
     max-width: 36rem;
   }
+
   #customer-2.testimonial {
     text-align: right;
   }
+
   #customer-2 .testimonial__info {
     text-align: left;
   }
