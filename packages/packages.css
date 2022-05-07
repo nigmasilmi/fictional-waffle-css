@@ -19,6 +19,7 @@ main {
   box-shadow: 2px 2px 4px 0 #ccc;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 
 .package:hover,
@@ -40,12 +41,16 @@ main {
 .package__badge {
   background-color: rgba(203, 78, 34, 1);
   position: absolute;
-  top: 4px;
+  top: 0;
   right: 0;
-  margin: 1.2rem;
+  margin: 0;
   padding: 0.5px;
   font-size: 1.2rem;
+  width: 18rem;
+  text-align: center;
   color: #fff;
+  transform: rotateZ(45deg) translateX(5.5rem) translateY(-1.4rem);
+  /* transform-origin: left top; */
 }
 
 .package__subtitle {
